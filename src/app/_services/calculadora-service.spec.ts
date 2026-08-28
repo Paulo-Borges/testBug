@@ -18,4 +18,32 @@ describe('CalculadoraService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  //_______________________________X__________________É um teste(18) que verifica se a soma esta certa
+  it('Deve somar, corretamente, dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(5, 8, 'soma');
+    expect(result).toBe(13);
+  });
+
+  //_______________________________X__________________É um teste(18) que verifica se a subtração esta certa
+  it('Deve subtrair, corretamente, dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(8, 8, 'subtração');
+    expect(result).toBe(0);
+  });
+
+  //_______________________________X__________________É um teste(18) que verifica se a multiplicação esta certa
+  it('Deve multiplicar, corretamente, dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(5, 8, 'multiplicação');
+    expect(result).toBe(40);
+  });
+
+  //_______________________________X__________________É um teste(18) que verifica se a divisão esta certa
+  it('Deve dividir, corretamente, dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(8, 2, 'divisão');
+    expect(result).toBe(4);
+  });
 });
